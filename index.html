@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geometry-genesis</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start" flex-none>
+         <h1>Interective </h1> 
+         <p>geometry-genesis</p> 
+         
+        </div>
+        <div class="navbar-center hidden lg:flex">
+         
+        </div>
+        <div class="navbar-end">
+          <a href="blog.html" class="btn">Button</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6" >
+          <!-- first card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="img/triangle.png" alt="triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="triangle">triangle</h2>
+              <p>
+                area (A)=0.5*b*h
+              </p>
+              <div class="flex space-x-4">
+                <div class="flex items-center">
+                  
+                  <input type="number" placeholder="b"  id="base-tri" name="input1" class="mt-1 p-2 border rounded-lg w-full" />
+                  <span class="ml-2">cm</span>
+                </div>
+                <div class="flex items-center">
+                    
+                  <input type="number" placeholder="h"  id="height-tri" name="input2" class="mt-1 p-2 border rounded-lg w-full" />
+                  <span class="ml-2">cm</span>
+                </div>
+              </div>
+              
+              <div>
+                <button class="btn " id="tri-btn">calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- second card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="img/rectangle.png" alt="rectangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="rectangle">rectangle</h2>
+              <p>
+                area (A)=w*i
+              </p>
+              <div class="flex space-x-4">
+                <div class="flex items-center">
+                  
+                  <input type="number" placeholder="w"  id="width-rec" name="input1" class="mt-1 p-2 border rounded-lg w-full" />
+                  <span class="ml-2">cm</span>
+                </div>
+                <div class="flex items-center">
+                    
+                  <input type="number" placeholder="i"  id="length-rec" name="input2" class="mt-1 p-2 border rounded-lg w-full" />
+                  <span class="ml-2">cm</span>
+                </div>
+              </div>
+              
+              <div>
+                <button class="btn " id="rec-btn" >calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="img/parallelogram.png" alt="parallelogram" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="parallelogram">parallelogram</h2>
+              <p>Area (A)=b*h</p>
+              <div class="flex space-x-4">
+                <div class="flex items-center">
+                  
+                 <p> b=<span id="base-para"> 10cm,</span> h= <span id="height-para">12cm </span> </p>
+                </div>
+              </div>
+              <div>
+                <button class="btn" id="para-btn">calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40"  src="img/rhombus.png" alt="rhombus" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="rhombus" >rhombus</h2>
+              <p>Area (A)=0.5*d1*d2</p>
+              <div class="flex space-x-4">
+                <div class="flex items-center">
+                <p> d1=<span id="diagonal1-rhom" >16cm,</span> d2=<span id="diagonal2-rhom" >8cm</span></p>
+                </div>
+              </div>
+              <div>
+                <button class="btn " id="rhom-btn">calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- fifth card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="img/pentagon.png" alt="pentagon" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="pentagon" >pentagon</h2>
+              <p>Area (A)=0.5*p*b</p>
+              <div class="flex space-x-4">
+                <div class="flex items-center">
+                <p> p=<span id="p-penta" >6cm,</span> b=<span id="b-penta" >10cm</span></p>
+                </div>
+              </div>
+              <div>
+                <button class="btn" id="penta-btn" >calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- six card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="img/ellipse.png" alt="ellipse" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="ellipse">ellipse</h2>
+              <p>Area (A)=πab</p>
+              <div class="flex space-x-4">
+                <div class="flex items-center">
+                  
+                <p> a=<span id="axis1-ellip">10cm,</span> b=<span id="axis2-ellip">4cm</span></p>
+                </div>
+              </div>
+              <div>
+                <button class="btn" id="ellip-btn" >calculate</button>
+                <p id="ellipse-result" class="mt-2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cart details div  -->
+        <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+          <h1 class="text-3xl text-center font-bold underline mt-5">
+            Area calcultion 
+          </h1>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Area</th>
+                </tr>
+              </thead>
+              <tbody id="table-container">
+                <!-- <tr>
+                  <th>1</th>
+                  <td>Cy Ganderton</td>
+                  <td>Quality Control Specialist</td>
+                  <td>Blue</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
